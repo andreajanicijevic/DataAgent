@@ -1,0 +1,797 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "01d5231f-be11-4cbf-8d10-af8f0793c4f7",
+  "workspaceId": "743a506c-7e52-4e6d-8f57-45f8d56f69ca",
+  "dataSourceInstructions": null,
+  "displayName": "Finance",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {
+    "csdl_relationships": "[{\"FromTable\":\"Sales\",\"FromColumn\":\"Country\",\"ToTable\":\"Country\",\"ToColumn\":\"Country2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales\",\"FromColumn\":\"Product\",\"ToTable\":\"Product\",\"ToColumn\":\"Product2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales\",\"FromColumn\":\"Channel\",\"ToTable\":\"Channel\",\"ToColumn\":\"Channel2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales\",\"FromColumn\":\"Customer_Segment\",\"ToTable\":\"Customer_Segment\",\"ToColumn\":\"Customer_Segment2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales\",\"FromColumn\":\"Scenario\",\"ToTable\":\"Scenario\",\"ToColumn\":\"Scenario2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales\",\"FromColumn\":\"Month\",\"ToTable\":\"Date\",\"ToColumn\":\"Date2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Country\",\"ToTable\":\"Country\",\"ToColumn\":\"Country2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Channel\",\"ToTable\":\"Channel\",\"ToColumn\":\"Channel2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Class\",\"ToTable\":\"Class\",\"ToColumn\":\"Class2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Line_Item\",\"ToTable\":\"Line_Item\",\"ToColumn\":\"Line_Item2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Department\",\"ToTable\":\"Department\",\"ToColumn\":\"Department2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Operating_Expenses\",\"FromColumn\":\"Year\",\"ToTable\":\"Date\",\"ToColumn\":\"Year\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToMany\"},{\"FromTable\":\"Sales___Expenses\",\"FromColumn\":\"Accounting_Head\",\"ToTable\":\"Accounting_Head\",\"ToColumn\":\"Accounting_Head2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Planning\",\"FromColumn\":\"Country\",\"ToTable\":\"Country\",\"ToColumn\":\"Country2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Planning\",\"FromColumn\":\"Month\",\"ToTable\":\"Date\",\"ToColumn\":\"Date2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales_Scatter\",\"FromColumn\":\"Country\",\"ToTable\":\"Country\",\"ToColumn\":\"Country2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales_Scatter\",\"FromColumn\":\"Product\",\"ToTable\":\"Product\",\"ToColumn\":\"Product2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Sales_Scatter\",\"FromColumn\":\"Month\",\"ToTable\":\"Date\",\"ToColumn\":\"Date2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"URL\",\"FromColumn\":\"Country\",\"ToTable\":\"Country\",\"ToColumn\":\"Country2\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"}]"
+  },
+  "elements": [
+    {
+      "id": "d60ec740-62de-496a-94d4-a9746706fa92",
+      "is_selected": true,
+      "display_name": "Accounting Head",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "616e5942-c5de-475a-ad1b-0106c45473f4",
+          "is_selected": true,
+          "display_name": "Accounting Head",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "736d6063-7bfb-4ca1-8116-38f41c34984c",
+      "is_selected": true,
+      "display_name": "Channel",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "088b093e-69fc-42eb-b193-875c24778309",
+          "is_selected": true,
+          "display_name": "Channel",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "b05394ca-8c68-45be-bbf2-1bd903aca26d",
+      "is_selected": true,
+      "display_name": "Class",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "5941859e-791c-4553-a5ba-a7c58b6f563b",
+          "is_selected": true,
+          "display_name": "Class",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2a3d34e1-db66-4745-b757-0cfb4e8db070",
+      "is_selected": true,
+      "display_name": "Country",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "b04c5058-153f-4da8-a97d-2cc70c3958b2",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d4d2b8a0-d229-4dd2-a884-57550e209ff9",
+          "is_selected": true,
+          "display_name": "Region",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "63c182d8-3f58-4358-adc6-5cee7c13a35d",
+      "is_selected": true,
+      "display_name": "Customer Segment",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "1453792d-9f8e-4837-a448-28fd6aaf53be",
+          "is_selected": true,
+          "display_name": "Customer Segment",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "417288ad-5e32-44a1-9162-33baa0a76e31",
+      "is_selected": true,
+      "display_name": "Date",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "94ff897e-1815-4997-bcb5-66f96b076b88",
+          "is_selected": true,
+          "display_name": "Date",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "84ef1254-894b-4b30-8237-a952aba98239",
+          "is_selected": true,
+          "display_name": "Year",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "72a12c00-276f-42f4-a61d-9b6c9d4f9fdc",
+          "is_selected": true,
+          "display_name": "Quarter",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6612f3b4-44d8-4428-aaa2-c915f00a27fb",
+          "is_selected": true,
+          "display_name": "Month",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "808fae4a-d6f7-4014-9e11-6445059b0f8c",
+          "is_selected": true,
+          "display_name": "Day",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3ddde316-90d8-4522-9713-f355b491df61",
+          "is_selected": true,
+          "display_name": "Month of Year",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c0476779-8d11-47b9-9d3f-64cf997409ec",
+          "is_selected": true,
+          "display_name": "Month of Year Sort",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0f8a8365-2967-42d9-8101-d3fc54347e00",
+          "is_selected": true,
+          "display_name": "Quarter of Year",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c78de6cc-3d8b-49ad-8eb5-e54460dfe8f1",
+      "is_selected": true,
+      "display_name": "Department",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "e5d575e5-f1d9-4cd8-89db-14d66ef90f8f",
+          "is_selected": true,
+          "display_name": "Department",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "fb37ffc3-fe75-4bce-a727-26811326d61e",
+      "is_selected": true,
+      "display_name": "Discount %",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "be395437-9261-4a4f-8162-1a62e509b8d7",
+          "is_selected": true,
+          "display_name": "Discount %",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8dd6783b-9114-4c08-abaf-fdcaad059601",
+          "is_selected": true,
+          "display_name": "Discount % Value",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "df939c6a-f00e-4733-a14b-2b2d4e59e742",
+      "is_selected": true,
+      "display_name": "Line Item",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "5356612d-d377-47db-8615-aaf2b16873f6",
+          "is_selected": true,
+          "display_name": "Line Item",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "473dedaf-41d8-4761-badd-0306c7581cb7",
+      "is_selected": true,
+      "display_name": "Operating Expenses",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "0ec87bf1-8bf3-4eec-9449-250421e7b5f7",
+          "is_selected": true,
+          "display_name": "Actual ($)",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ae6ff4a9-ee8d-45e9-b5ab-6bbbb055ab43",
+          "is_selected": true,
+          "display_name": "Budget ($)",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "03671c4d-e969-4ff5-b6da-84e5959ca583",
+          "is_selected": true,
+          "display_name": "VTB ($)",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "73fc21b1-ad9c-4b95-84d6-110e8fef6886",
+          "is_selected": true,
+          "display_name": "YoY ($)",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "58eb8ebf-0ba9-4d55-9c12-38e865ee8116",
+          "is_selected": true,
+          "display_name": "VTB",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e50489d6-6c32-4b61-a194-4da08fea9427",
+          "is_selected": true,
+          "display_name": "Actual $",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "dcfba327-a1f1-427f-9d48-cb81a6749c6c",
+          "is_selected": true,
+          "display_name": "Budget $",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f7f738f0-834c-4075-95e4-301fb3d45962",
+          "is_selected": true,
+          "display_name": "VTB %",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d879c9ca-6830-4558-8796-b73523a35bd2",
+          "is_selected": true,
+          "display_name": "VTB $",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "0b94c2c0-3abf-45ac-bf47-16cbd69b6ba3",
+      "is_selected": true,
+      "display_name": "Planning",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "c2405e1e-6b7f-4e48-abdd-325b1604bcd1",
+          "is_selected": true,
+          "display_name": "Forecast $",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3ecc8ed1-aa2c-4b8c-b70e-8bd6a5bf043f",
+          "is_selected": true,
+          "display_name": "Budget $",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "73ff99e3-a73e-44d2-ae7d-f21c1e29b932",
+          "is_selected": true,
+          "display_name": "Actual",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "38753b43-3cb6-4788-97dc-394f783e53ca",
+          "is_selected": true,
+          "display_name": "Variance to budget",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6bb4912f-0884-4fac-a9b0-c0b833ce8a59",
+          "is_selected": true,
+          "display_name": "Actual Sales",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6c1a8cee-689a-4a90-8e23-ea46cb1ad0f3",
+          "is_selected": true,
+          "display_name": "Budget",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7bc333a4-db74-47d0-b3a8-9ddfed8f9c90",
+          "is_selected": true,
+          "display_name": "Forecast ($)",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "10c245c6-d927-4f60-9b4d-161113977019",
+          "is_selected": true,
+          "display_name": "Forecast",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "71ae465e-b255-4027-b7f4-004b1240d503",
+          "is_selected": true,
+          "display_name": "Actual FYTD",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "acba1007-de9c-4f06-b7e9-aae6143a93ca",
+      "is_selected": true,
+      "display_name": "Product",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "7d50e3a0-fe66-40bd-a76e-572699990d5d",
+          "is_selected": true,
+          "display_name": "Product",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5a93c8bd-683d-4225-a6cf-46babe795b8f",
+          "is_selected": true,
+          "display_name": "Category",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "9cdf015a-2b3e-40e1-9bf1-d213c93d1e16",
+      "is_selected": true,
+      "display_name": "Sales",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "7cf1061f-5a25-432a-8528-d31c452a5bbf",
+          "is_selected": true,
+          "display_name": "Gross Sales",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "406aa504-adc1-4604-b143-856d8a298512",
+          "is_selected": true,
+          "display_name": "Budget",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a7ef2d7b-540e-4665-a80c-f7915831da8a",
+          "is_selected": true,
+          "display_name": "Forecast",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8115a3f7-931b-483d-9854-73619dca3564",
+          "is_selected": true,
+          "display_name": "Discount",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b7628a8f-1426-45ee-bb51-dbcc3cc7baf1",
+          "is_selected": true,
+          "display_name": "Net Sales",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9051ab2b-6c7b-4901-9a62-67f9b898ca84",
+          "is_selected": true,
+          "display_name": "COGS",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "74af7338-0151-4691-a9c3-9d6e3fbddf99",
+          "is_selected": true,
+          "display_name": "Gross Profit",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a4eae730-ae8e-4ff2-a536-6d97f2453be7",
+          "is_selected": true,
+          "display_name": "VTB ($)",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "67bf206d-90a4-4b69-8dfc-49d7b16be05a",
+          "is_selected": true,
+          "display_name": "VTB (%)",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6a98c851-90d8-4325-91bd-f02f9a31c937",
+          "is_selected": true,
+          "display_name": "FVTB$",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "16b803d7-753f-493d-a1e9-76c928291f30",
+          "is_selected": true,
+          "display_name": "FVTB%",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "71b10863-3164-4f35-9bb9-8bef9bf649d5",
+          "is_selected": true,
+          "display_name": "VTB%",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c40c4e42-4962-42b6-9619-6ff92ef9cdcb",
+          "is_selected": true,
+          "display_name": "VTB$",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a34dac7b-28ff-4eba-be1c-2fbb95a9b2e7",
+          "is_selected": true,
+          "display_name": "Profit (%)",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "9940b0dc-6584-4ae1-b919-0b62ae27058b",
+      "is_selected": true,
+      "display_name": "Sales & Expenses",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "22ca7c94-3e95-4a39-9899-c149757076d3",
+          "is_selected": true,
+          "display_name": "Amount",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "f4c12fbe-62f1-4af8-8b8a-902adae94a36",
+      "is_selected": true,
+      "display_name": "Sales Scatter",
+      "type": "semantic_model.table",
+      "description": "Supports scatter chart with play axis (month). Values do not correspond to data in the Sales table.",
+      "children": [
+        {
+          "id": "1b2260b0-5262-49ed-91e9-8340b1609d42",
+          "is_selected": true,
+          "display_name": "Quantity",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "47d47ece-44a1-4426-99d0-2badeb15e542",
+          "is_selected": true,
+          "display_name": "Gross Sales",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "36a8e67e-2f8d-47f5-9bf9-e8f25f95d838",
+          "is_selected": true,
+          "display_name": "Gross Profit",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0e9896a7-4ade-4f65-bc82-e49a08e119d9",
+          "is_selected": true,
+          "display_name": "Gross Profit Margin",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "6eaca480-ba76-436d-aa08-a1dd4a3a1250",
+      "is_selected": true,
+      "display_name": "SalesEvents",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "81739fcc-b2ce-4987-b043-46124cd9ea49",
+          "is_selected": true,
+          "display_name": "EventID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d1bf0564-f641-49e9-b17b-fff958f25b24",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "aee143b9-70f2-4bae-9e84-c047a80c9ec9",
+          "is_selected": true,
+          "display_name": "GrossSales",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fa65f6c3-fad9-47f3-8225-d6dbd259010d",
+          "is_selected": true,
+          "display_name": "Revenues",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "42711e02-bd65-4e53-ae20-5f6e5053031b",
+          "is_selected": true,
+          "display_name": "COGS",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5fd35b0b-cb8b-43f1-8836-23b974e4b933",
+          "is_selected": true,
+          "display_name": "Quantity",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7d92d2ae-625d-48cc-b3de-0725f206cc56",
+          "is_selected": true,
+          "display_name": "SaleDate",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4383c81a-bdd2-40d7-bd91-1c51ec71cb81",
+          "is_selected": true,
+          "display_name": "ProductID",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "df75baaa-47c5-4719-bb29-d29b809dad56",
+      "is_selected": true,
+      "display_name": "Scenario",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "358f32cc-b66a-43fe-912d-dddcfd349908",
+          "is_selected": true,
+          "display_name": "Scenario",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "08599185-dc7b-4e61-b198-c9fa67f15ba4",
+      "is_selected": true,
+      "display_name": "URL",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "880ebfd0-c679-4317-bc56-319ae61cdcb8",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cc267690-79a6-49a5-b427-a0724bff37e0",
+          "is_selected": true,
+          "display_name": "Region",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ca3e340a-9f02-4649-8da9-5717098d35d3",
+          "is_selected": true,
+          "display_name": "DocURL",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}
